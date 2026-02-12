@@ -1,9 +1,31 @@
 import type { Metadata } from "next";
+import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 
 export const metadata: Metadata = {
   title: "Contact | Michelle Powell",
   description: "Get in touch with Michelle — links to GitHub, LinkedIn, and email.",
 };
+
+const contactLinks = [
+  {
+    label: "Email",
+    value: "hello@example.com",
+    href: "mailto:hello@example.com",
+    icon: FiMail,
+  },
+  {
+    label: "GitHub",
+    value: "github.com/michpow",
+    href: "https://github.com/michpow",
+    icon: FiGithub,
+  },
+  {
+    label: "LinkedIn",
+    value: "Connect with me",
+    href: "https://linkedin.com",
+    icon: FiLinkedin,
+  },
+];
 
 export default function ContactPage() {
   return (
@@ -15,33 +37,21 @@ export default function ContactPage() {
       </p>
 
       <div className="flex flex-col gap-4">
-        <a
-          href="mailto:hello@example.com"
-          className="rounded-xl border border-gray-light bg-white px-6 py-4 text-center shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-        >
-          <p className="font-semibold text-heading">Email</p>
-          <p className="text-sm text-gray">hello@example.com</p>
-        </a>
-
-        <a
-          href="https://github.com/michpow"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-xl border border-gray-light bg-white px-6 py-4 text-center shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-        >
-          <p className="font-semibold text-heading">GitHub</p>
-          <p className="text-sm text-gray">github.com/michpow</p>
-        </a>
-
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-xl border border-gray-light bg-white px-6 py-4 text-center shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
-        >
-          <p className="font-semibold text-heading">LinkedIn</p>
-          <p className="text-sm text-gray">Connect with me</p>
-        </a>
+        {contactLinks.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            target={link.href.startsWith("mailto") ? undefined : "_blank"}
+            rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
+            className="flex items-center gap-4 rounded-xl border border-gray-light bg-white px-6 py-4 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+          >
+            <link.icon className="h-6 w-6 text-pink-dark" />
+            <div className="text-left">
+              <p className="font-semibold text-heading">{link.label}</p>
+              <p className="text-sm text-gray">{link.value}</p>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   );
