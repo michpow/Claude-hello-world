@@ -8,37 +8,53 @@ import { FiDownload } from "react-icons/fi";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn more about Michelle — background, skills, and journey into software development.",
+    "Learn more about Michelle Powell — Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and cross-functional leadership.",
 };
 
 const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Tailwind CSS",
-  "Git",
+  "Product Management",
+  "AI/ML Product Strategy",
+  "0→1 SaaS Platforms",
+  "B2B Marketplace",
+  "Cross-Functional Leadership",
+  "Data & Analytics",
+  "User Experience (UX)",
+  "Agile / Scrum",
+  "Enterprise SaaS",
+  "Global Product Delivery",
 ];
 
-// Timeline milestones — a simple way to show your learning journey
+// Career milestones
 const milestones = [
   {
-    date: "Feb 2026",
-    title: "Started Learning to Code",
-    description: "Began my journey with HTML, CSS, and JavaScript fundamentals.",
-  },
-  {
-    date: "Feb 2026",
-    title: "Built This Portfolio",
+    date: "2024 – Present",
+    title: "Director of Product — Transfix",
     description:
-      "Created my first real project using React, Next.js, TypeScript, and Tailwind CSS.",
+      "Leading Product Management, Product Design, and Product Support for a 0→1 SaaS product suite. Driving AI/ML predictive pricing and workflow products for freight broker and 3PL customers.",
   },
   {
-    date: "Coming soon",
-    title: "Next Project",
-    description: "Stay tuned — more projects are on the way!",
+    date: "2021 – 2024",
+    title: "PM → Senior PM → Group PM — Transfix",
+    description:
+      "Promoted three times in under three years. Grew SaaS usage by 6,000%, onboarded first enterprise customer, shipped 4.8-star mobile apps, and supported a successful funding round.",
+  },
+  {
+    date: "2018 – 2021",
+    title: "Product Manager — Marsh",
+    description:
+      "Built insurance analytics products on a scalable data platform, leveraging AI/ML and actuarial science. Delivered insurtech solutions for global enterprise clients across North America, Europe, and Asia.",
+  },
+  {
+    date: "2016 – 2018",
+    title: "Management Consultant — Accenture",
+    description:
+      "Advised Fortune 500 clients on digital transformation and automation. Led post-acquisition integration across 12 cross-functional teams. Spearheaded an NLP/OCR project that reduced underwriting cycle time by 60+ days.",
+  },
+  {
+    date: "2015 – 2016",
+    title: "Strategic Sourcing Analyst — Giant Eagle",
+    description:
+      "Developed data-driven sourcing strategies to optimize vendor selection and reduce costs across IT categories for 400+ retail locations.",
   },
 ];
 
@@ -54,15 +70,18 @@ export default function AboutPage() {
         </div>
         <div>
           <p className="mb-4 leading-relaxed text-gray">
-            Hi! I&apos;m Michelle, an aspiring software developer passionate
-            about building clean, modern web experiences. I&apos;m currently
-            learning React, TypeScript, and Next.js — and documenting my
-            journey along the way.
+            I&apos;m a product leader with deep experience driving strategy and
+            delivery for SaaS and AI products. I lead product management,
+            product design, and product support teams — shipping web and mobile
+            applications that solve meaningful problems and deliver sustainable
+            business outcomes.
           </p>
           <p className="leading-relaxed text-gray">
-            This portfolio is both a showcase of what I&apos;m building and a
-            project in itself. Every line of code here is part of my learning
-            process, and I&apos;m excited to keep growing as a developer.
+            My approach balances strategy, clarity, and empathy — grounding
+            decisions in user insight and business context. I&apos;ve worked in
+            global enterprise environments and fast-paced startups, from
+            building 0→1 platforms and scaling recurring revenue to leading
+            product strategy across North America, Europe, and Asia.
           </p>
         </div>
       </div>
@@ -82,9 +101,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline — shows your learning milestones */}
+      {/* Timeline — career milestones */}
       <section className="mb-12">
-        <h2 className="mb-6 text-xl font-bold text-heading">My Journey</h2>
+        <h2 className="mb-6 text-xl font-bold text-heading">Career</h2>
         <div className="space-y-6 border-l-2 border-pink-primary/30 pl-6">
           {milestones.map((milestone) => (
             <div key={milestone.title} className="relative">

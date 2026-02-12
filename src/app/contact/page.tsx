@@ -32,8 +32,8 @@ export default function ContactPage() {
     <div className="mx-auto max-w-xl px-6 py-16 text-center">
       <h1 className="mb-4 text-3xl font-bold text-heading">Get in Touch</h1>
       <p className="mb-10 text-gray">
-        I&apos;d love to hear from you! Whether it&apos;s a question, opportunity, or
-        just a hello — feel free to reach out.
+        Whether you&apos;re a recruiter, a fellow product leader, or just want
+        to connect — I&apos;d love to hear from you.
       </p>
 
       <div className="flex flex-col gap-4">
