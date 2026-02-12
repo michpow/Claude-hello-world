@@ -30,7 +30,7 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/michpowell" target="_blank" rel="noopener noreferrer" className="text-gray transition-colors hover:text-pink-dark">
             <FiLinkedin className="h-5 w-5" />
           </a>
-          <a href="mailto:hello@example.com" className="text-gray transition-colors hover:text-pink-dark">
+          <a href="mailto:michellerajpowell@gmail.com" className="text-gray transition-colors hover:text-pink-dark">
             <FiMail className="h-5 w-5" />
           </a>
         </div>

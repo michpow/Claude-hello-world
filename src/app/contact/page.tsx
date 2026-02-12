@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 const contactLinks = [
   {
     label: "Email",
-    value: "hello@example.com",
-    href: "mailto:hello@example.com",
+    value: "michellerajpowell@gmail.com",
+    href: "mailto:michellerajpowell@gmail.com",
     icon: FiMail,
   },
   {
