@@ -16,10 +16,30 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Smooth scrolling — makes anchor links scroll nicely instead of jumping */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-white);
   color: var(--color-dark);
   font-family: var(--font-sans);
+}
+
+/* Selection color — when you highlight text, it shows in pink */
+::selection {
+  background: #F9A8D4;
+  color: #111827;
+}
+
+/* Focus ring — for keyboard navigation accessibility.
+   When someone tabs through your site (instead of using a mouse),
+   this pink ring shows which element is focused. */
+*:focus-visible {
+  outline: 2px solid #EC4899;
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 /* "Prose" styles for rendering markdown blog posts.
@@ -83,6 +103,7 @@ body {
 .prose-custom a {
   color: var(--color-pink-dark);
   text-decoration: underline;
+  transition: color 0.15s ease;
 }
 
 .prose-custom a:hover {
@@ -122,4 +143,9 @@ body {
 .prose-custom hr {
   border-color: var(--color-gray-light);
   margin: 2rem 0;
+}
+
+.prose-custom img {
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
 }

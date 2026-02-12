@@ -23,7 +23,7 @@ export async function generateMetadata({
   if (!post) return { title: "Post Not Found" };
 
   return {
-    title: `${post.title} | Michelle Powell`,
+    title: post.title,
     description: post.excerpt,
   };
 }
