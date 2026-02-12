@@ -14,25 +14,30 @@ export default function HeroSection() {
           Hi, I&apos;m <span className="text-pink-dark">Michelle</span>
         </h1>
 
+        <p className="text-lg font-medium text-heading">
+          Director of Product | AI &amp; Data-Driven Innovation
+        </p>
+
         <p className="max-w-xl text-lg leading-relaxed text-gray">
-          Aspiring developer learning to build beautiful things for the web.
-          Welcome to my corner of the internet.
+          Turning complexity into clarity. I build and scale AI-powered SaaS
+          platforms, lead cross-functional product teams, and ship products
+          that deliver real business outcomes.
         </p>
 
         {/* CTA = "Call to Action" — buttons that guide visitors to the
             most important pages on your site */}
         <div className="flex flex-wrap justify-center gap-4">
           <Link
-            href="/projects"
+            href="/experience"
             className="rounded-full bg-pink-dark px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-pink-medium"
           >
-            View Projects
+            View Experience
           </Link>
           <Link
-            href="/blog"
+            href="/about"
             className="rounded-full border border-pink-dark px-6 py-3 text-sm font-medium text-pink-dark transition-colors hover:bg-pink-dark hover:text-white"
           >
-            Read Blog
+            About Me
           </Link>
           <Link
             href="/contact"

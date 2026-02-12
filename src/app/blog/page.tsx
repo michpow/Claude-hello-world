@@ -4,7 +4,7 @@ import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Thoughts, tutorials, and notes from my journey learning web development.",
+  description: "Thoughts on product management, AI/ML, and building great product teams.",
 };
 
 // This page reads all .md files from src/content/blog/ and displays them.
@@ -17,7 +17,7 @@ export default function BlogPage() {
     <div className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="mb-4 text-3xl font-bold text-heading">Blog</h1>
       <p className="mb-10 text-gray">
-        Thoughts, tutorials, and notes from my coding journey.
+        Thoughts on product management, AI/ML, and building great teams.
       </p>
 
       <div className="flex flex-col gap-6">

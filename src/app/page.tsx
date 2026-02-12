@@ -1,13 +1,13 @@
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
-import ProjectCard from "@/components/ProjectCard";
+import ExperienceCard from "@/components/ExperienceCard";
 import BlogPostCard from "@/components/BlogPostCard";
-import { projects } from "@/data/projects";
+import { experiences } from "@/data/experiences";
 import { getAllPosts } from "@/lib/blog";
 
 export default function Home() {
-  // Grab the first 3 projects and first 2 blog posts to preview on the home page
-  const featuredProjects = projects.slice(0, 3);
+  // Show the first 3 experience entries and first 2 blog posts on the home page
+  const featuredExperience = experiences.slice(0, 3);
   const latestPosts = getAllPosts().slice(0, 2);
 
   return (
@@ -15,22 +15,22 @@ export default function Home() {
       {/* Hero — the big banner at the top with your name and photo */}
       <HeroSection />
 
-      {/* Featured Projects — a preview grid of your work */}
+      {/* Experience Highlights — a preview of career roles */}
       <section className="mx-auto max-w-5xl px-6 py-16">
         <h2 className="mb-8 text-2xl font-bold text-heading">
-          Featured Projects
+          Experience Highlights
         </h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+          {featuredExperience.map((experience) => (
+            <ExperienceCard key={experience.title} experience={experience} />
           ))}
         </div>
         <div className="mt-8 text-center">
           <Link
-            href="/projects"
+            href="/experience"
             className="text-sm font-medium text-pink-dark hover:underline"
           >
-            View all projects &rarr;
+            View full experience &rarr;
           </Link>
         </div>
       </section>

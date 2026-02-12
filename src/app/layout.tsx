@@ -8,33 +8,34 @@ import "./globals.css";
 // "Open Graph" (og) tags are specifically for social media cards.
 export const metadata: Metadata = {
   title: {
-    default: "Michelle Powell | Portfolio",
+    default: "Michelle Powell | Director of Product",
     template: "%s | Michelle Powell",
   },
   description:
-    "Personal portfolio and blog — built with Next.js, TypeScript, and Tailwind CSS.",
+    "Director of Product leader specializing in AI/ML product strategy, 0→1 SaaS platforms, and cross-functional team leadership.",
   keywords: [
     "Michelle Powell",
-    "portfolio",
-    "web developer",
-    "React",
-    "Next.js",
-    "blog",
+    "Director of Product",
+    "product management",
+    "AI/ML product strategy",
+    "SaaS",
+    "B2B",
+    "product leader",
   ],
   authors: [{ name: "Michelle Powell" }],
   openGraph: {
-    title: "Michelle Powell | Portfolio",
+    title: "Michelle Powell | Director of Product",
     description:
-      "Aspiring developer building beautiful things for the web. Check out my projects and blog.",
+      "Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and scaling empowered product teams.",
     type: "website",
     locale: "en_US",
     siteName: "Michelle Powell",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Michelle Powell | Portfolio",
+    title: "Michelle Powell | Director of Product",
     description:
-      "Aspiring developer building beautiful things for the web. Check out my projects and blog.",
+      "Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and scaling empowered product teams.",
   },
   robots: {
     index: true,
