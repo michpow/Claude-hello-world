@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 
 export const metadata: Metadata = {
-  title: "Contact | Michelle Powell",
+  title: "Contact",
   description: "Get in touch with Michelle — links to GitHub, LinkedIn, and email.",
 };
 

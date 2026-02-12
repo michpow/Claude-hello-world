@@ -6,7 +6,7 @@ import { FiDownload } from "react-icons/fi";
 // Good metadata helps with SEO (Search Engine Optimization) — meaning your
 // site shows up higher in Google results.
 export const metadata: Metadata = {
-  title: "About | Michelle Powell",
+  title: "About",
   description:
     "Learn more about Michelle — background, skills, and journey into software development.",
 };
@@ -49,7 +49,9 @@ export default function AboutPage() {
 
       {/* Bio section — headshot next to a text introduction */}
       <div className="mb-12 flex flex-col items-center gap-8 md:flex-row md:items-start">
-        <HeadshotImage size="sm" />
+        <div className="shrink-0">
+          <HeadshotImage size="sm" />
+        </div>
         <div>
           <p className="mb-4 leading-relaxed text-gray">
             Hi! I&apos;m Michelle, an aspiring software developer passionate

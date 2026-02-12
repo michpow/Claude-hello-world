@@ -3,7 +3,7 @@ import BlogPostCard from "@/components/BlogPostCard";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog | Michelle Powell",
+  title: "Blog",
   description: "Thoughts, tutorials, and notes from my journey learning web development.",
 };
 
