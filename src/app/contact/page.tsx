@@ -21,8 +21,8 @@ const contactLinks = [
   },
   {
     label: "LinkedIn",
-    value: "Connect with me",
-    href: "https://linkedin.com",
+    value: "linkedin.com/in/michpowell",
+    href: "https://www.linkedin.com/in/michpowell",
     icon: FiLinkedin,
   },
 ];
