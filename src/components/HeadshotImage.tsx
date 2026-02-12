@@ -1,6 +1,6 @@
 // This component shows your headshot photo in a circle with a nice border.
-// Your photo lives at public/images/headshot.jpg — Next.js serves anything
-// in the "public" folder at the root URL (so /images/headshot.jpg).
+// Your photo lives at public/images/headshot.png — Next.js serves anything
+// in the "public" folder at the root URL (so /images/headshot.png).
 
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ export default function HeadshotImage({ size = "lg" }: HeadshotImageProps) {
 
   return (
     <Image
-      src="/images/headshot.jpg"
+      src="/images/headshot.png"
       alt="Michelle Powell"
       width={pixels}
       height={pixels}
