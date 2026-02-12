@@ -1,12 +1,45 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import { MDXRemote } from "next-mdx-remote/rsc";
+import { getAllPosts, getPostBySlug } from "@/lib/blog";
 
-// Placeholder blog post page — will be replaced with markdown rendering in Phase 4
+// generateStaticParams tells Next.js which blog post URLs to pre-build.
+// It reads all your .md files and creates a page for each one at build time.
+// This is called "Static Site Generation" (SSG) — it makes your site super fast
+// because the pages are pre-built HTML rather than generated on every visit.
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((post) => ({ slug: post.slug }));
+}
+
+// Dynamic metadata — sets the browser tab title to the post title
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
+  if (!post) return { title: "Post Not Found" };
+
+  return {
+    title: `${post.title} | Michelle Powell`,
+    description: post.excerpt,
+  };
+}
+
 export default async function BlogPostPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const post = getPostBySlug(slug);
+
+  // If no .md file matches this URL, show a 404 page
+  if (!post) {
+    notFound();
+  }
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
@@ -18,22 +51,20 @@ export default async function BlogPostPage({
       </Link>
 
       <article>
-        <p className="mb-2 text-sm text-gray">February 12, 2026</p>
-        <h1 className="mb-6 text-3xl font-bold text-heading">
-          {slug
-            .split("-")
-            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-            .join(" ")}
-        </h1>
-        <div className="prose prose-gray max-w-none leading-relaxed text-dark">
-          <p>
-            This is a placeholder blog post for <strong>&ldquo;{slug}&rdquo;</strong>.
-            In Phase 4, this page will automatically render the contents of a markdown
-            file from the <code>src/content/blog/</code> folder.
-          </p>
-          <p className="mt-4">
-            Stay tuned — the markdown-powered blog system is coming soon!
-          </p>
+        <p className="mb-2 text-sm text-gray">
+          {new Date(post.date).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
+        <h1 className="mb-8 text-3xl font-bold text-heading">{post.title}</h1>
+
+        {/* MDXRemote renders the markdown content as HTML.
+            The "prose-custom" class styles headings, paragraphs, lists, code blocks, etc.
+            so you don't have to add Tailwind classes to your markdown. */}
+        <div className="prose-custom">
+          <MDXRemote source={post.content} />
         </div>
       </article>
     </div>
