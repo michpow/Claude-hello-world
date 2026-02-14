@@ -12,21 +12,21 @@ export const metadata: Metadata = {
     template: "%s | Michelle Powell",
   },
   description:
-    "Director of Product who helps teams navigate ambiguity and turn messy problem spaces into products that scale.",
+    "Director of Product leader specializing in AI/ML product strategy, 0→1 SaaS platforms, and cross-functional team leadership.",
   keywords: [
     "Michelle Powell",
     "Director of Product",
     "product management",
-    "product leadership",
+    "AI/ML product strategy",
     "SaaS",
-    "logistics",
-    "product strategy",
+    "B2B",
+    "product leader",
   ],
   authors: [{ name: "Michelle Powell" }],
   openGraph: {
     title: "Michelle Powell | Director of Product",
     description:
-      "Director of Product who helps teams navigate ambiguity and turn messy problem spaces into products that scale.",
+      "Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and scaling empowered product teams.",
     type: "website",
     locale: "en_US",
     siteName: "Michelle Powell",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Michelle Powell | Director of Product",
     description:
-      "Director of Product who helps teams navigate ambiguity and turn messy problem spaces into products that scale.",
+      "Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and scaling empowered product teams.",
   },
   robots: {
     index: true,
