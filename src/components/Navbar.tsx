@@ -62,7 +62,7 @@ export default function Navbar() {
           mobileMenuOpen ? "max-h-64 py-4" : "max-h-0 border-t-0 py-0"
         }`}
       >
-        <div className="px-6 text-center">
+        <div className="px-6 text-center md:text-right">
           {navLinks.map((link) => {
             const isActive =
               link.href === "/"
