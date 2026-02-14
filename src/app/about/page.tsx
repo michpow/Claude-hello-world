@@ -11,19 +11,6 @@ export const metadata: Metadata = {
     "Learn more about Michelle Powell — Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and cross-functional leadership.",
 };
 
-const skills = [
-  "Product Management",
-  "AI/ML Product Strategy",
-  "0→1 SaaS Platforms",
-  "B2B Marketplace",
-  "Cross-Functional Leadership",
-  "Data & Analytics",
-  "User Experience (UX)",
-  "Agile / Scrum",
-  "Enterprise SaaS",
-  "Global Product Delivery",
-];
-
 
 export default function AboutPage() {
   return (
@@ -37,36 +24,28 @@ export default function AboutPage() {
         </div>
         <div>
           <p className="mb-4 leading-relaxed text-gray">
-            I&apos;m a product leader with deep experience driving strategy and
-            delivery for SaaS and AI products. I lead product management,
-            product design, and product support teams — shipping web and mobile
-            applications that solve meaningful problems and deliver sustainable
-            business outcomes.
+            I&apos;m a product leader focused on clarity, judgment, and building
+            systems that hold up as organizations scale. I care deeply about how
+            decisions get made, not just what gets shipped.
+          </p>
+          <p className="mb-4 leading-relaxed text-gray">
+            For years, I&apos;ve been intrigued by how new technology actually
+            fits into real workflows and real teams. My work sits at the
+            intersection of product strategy, execution, and emerging AI, with a
+            focus on what it takes to make new tools work in practice.
           </p>
           <p className="leading-relaxed text-gray">
-            My approach balances strategy, clarity, and empathy — grounding
-            decisions in user insight and business context. I&apos;ve worked in
-            global enterprise environments and fast-paced startups, from
-            building 0→1 platforms and scaling recurring revenue to leading
-            product strategy across North America, Europe, and Asia.
+            I began my career in Pittsburgh, then moved to New York City where I
+            worked at Accenture and found my way into product. There, I learned
+            the value of speed, high standards, and clear decision-making in
+            complex environments. I eventually returned to Pittsburgh, where I
+            lead product teams remotely and stay closely connected to the local
+            tech and AI community. Outside of work, you can catch me at a
+            pottery studio, walking around the city, or hanging with my family.
           </p>
         </div>
       </div>
 
-      {/* Skills — displayed as colorful "badge" pills */}
-      <section className="mb-12">
-        <h2 className="mb-4 text-xl font-bold text-heading">Skills</h2>
-        <div className="flex flex-wrap gap-3">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-full bg-pink-light px-4 py-2 text-sm font-medium text-pink-dark"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </section>
 
     </div>
   );
