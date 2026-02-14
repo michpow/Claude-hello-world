@@ -39,7 +39,6 @@ export default function ComplexityToClarity() {
   const animationRef = useRef<number>(0);
   const [isVisible, setIsVisible] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [hasPlayed, setHasPlayed] = useState(false);
 
   const playAnimation = useCallback(() => {
     const path = pathRef.current;
@@ -61,7 +60,6 @@ export default function ComplexityToClarity() {
       path.style.transition = "none";
       requestAnimationFrame(() => {
         setProgress(1);
-        setHasPlayed(true);
       });
       return;
     }
@@ -74,7 +72,6 @@ export default function ComplexityToClarity() {
     // Batch state reset and start animation via rAF
     requestAnimationFrame(() => {
       setProgress(0);
-      setHasPlayed(false);
 
       requestAnimationFrame(() => {
         path.style.transition = "stroke-dashoffset 2.5s ease-out";
@@ -88,8 +85,6 @@ export default function ComplexityToClarity() {
           setProgress(p);
           if (p < 1) {
             animationRef.current = requestAnimationFrame(animate);
-          } else {
-            setHasPlayed(true);
           }
         };
         animationRef.current = requestAnimationFrame(animate);
@@ -175,12 +170,6 @@ export default function ComplexityToClarity() {
             );
           })}
         </svg>
-        <p
-          className="mt-2 text-center text-xs text-gray/60 transition-opacity duration-500"
-          style={{ opacity: hasPlayed ? 1 : 0 }}
-        >
-          Click to replay
-        </p>
       </div>
     </section>
   );
