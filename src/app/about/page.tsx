@@ -11,19 +11,6 @@ export const metadata: Metadata = {
     "Learn more about Michelle Powell — Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and cross-functional leadership.",
 };
 
-const skills = [
-  "Product Management",
-  "AI/ML Product Strategy",
-  "0→1 SaaS Platforms",
-  "B2B Marketplace",
-  "Cross-Functional Leadership",
-  "Data & Analytics",
-  "User Experience (UX)",
-  "Agile / Scrum",
-  "Enterprise SaaS",
-  "Global Product Delivery",
-];
-
 
 export default function AboutPage() {
   return (
@@ -53,27 +40,13 @@ export default function AboutPage() {
             the value of speed, high standards, and clear decision-making in
             complex environments. I eventually returned to Pittsburgh, where I
             lead product teams remotely and stay closely connected to the local
-            tech and AI community. Outside of work, I&apos;m usually in a
-            pottery studio or walking around the city, thinking about where
-            creativity and systems overlap.
+            tech and AI community. Outside of work, you can catch me at a
+            pottery studio, walking around the city, meeting up with tech folks,
+            or hanging with my family.
           </p>
         </div>
       </div>
 
-      {/* Skills — displayed as colorful "badge" pills */}
-      <section className="mb-12">
-        <h2 className="mb-4 text-xl font-bold text-heading">Skills</h2>
-        <div className="flex flex-wrap gap-3">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-full bg-pink-light px-4 py-2 text-sm font-medium text-pink-dark"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </section>
 
     </div>
   );
