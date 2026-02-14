@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import HeadshotImage from "@/components/HeadshotImage";
-import { FiDownload } from "react-icons/fi";
+
 
 // Metadata = the info that shows up in browser tabs and search engine results.
 // Good metadata helps with SEO (Search Engine Optimization) — meaning your
@@ -68,20 +68,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Resume download */}
-      <section>
-        <h2 className="mb-4 text-xl font-bold text-heading">Resume</h2>
-        <p className="mb-4 text-sm text-gray">
-          Download my resume to learn more about my experience and education.
-        </p>
-        <a
-          href="/resume.pdf"
-          className="inline-flex items-center gap-2 rounded-full bg-pink-dark px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-pink-medium"
-        >
-          <FiDownload className="h-4 w-4" />
-          Download Resume (PDF)
-        </a>
-      </section>
     </div>
   );
 }

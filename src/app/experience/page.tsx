@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ExperienceCard from "@/components/ExperienceCard";
 import { experiences } from "@/data/experiences";
+import { FiExternalLink } from "react-icons/fi";
 
 export const metadata: Metadata = {
   title: "Experience",
@@ -21,6 +22,42 @@ export default function ExperiencePage() {
           <ExperienceCard key={experience.company} experience={experience} />
         ))}
       </div>
+
+      {/* Volunteering */}
+      <section className="mt-16">
+        <h2 className="mb-8 text-2xl font-bold text-heading">Volunteering</h2>
+        <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
+          <div className="flex items-start justify-between">
+            <div>
+              <h3 className="text-xl font-bold text-heading">AI@Work PGH</h3>
+              <p className="text-sm text-gray">Jan 2026 – Present</p>
+            </div>
+            <a
+              href="https://www.aiatworkpgh.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-sm font-medium text-pink-dark hover:underline"
+            >
+              <FiExternalLink className="h-4 w-4" />
+            </a>
+          </div>
+          <p className="mt-2 text-xs font-medium text-pink-dark">Board Member</p>
+          <p className="mt-2 text-sm leading-relaxed text-gray">
+            Community creator for Pittsburgh&apos;s AI builder community — connecting local professionals, developers, and enthusiasts to explore and build with AI.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-1.5">
+            <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">
+              AI Community
+            </span>
+            <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">
+              Pittsburgh
+            </span>
+            <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">
+              Community Building
+            </span>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
