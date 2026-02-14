@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
+import ComplexityToClarity from "@/components/ComplexityToClarity";
 import FieldNoteCard from "@/components/FieldNoteCard";
 import { getAllNotes } from "@/lib/field-notes";
 
@@ -10,6 +11,9 @@ export default function Home() {
     <div>
       {/* Hero — the big banner at the top with your name and photo */}
       <HeroSection />
+
+      {/* Interactive squiggly-to-straight line animation */}
+      <ComplexityToClarity />
 
       {/* Latest Field Notes — shows your most recent writing */}
       <section className="bg-pink-light/50">
