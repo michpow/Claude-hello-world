@@ -7,7 +7,7 @@ import HeadshotImage from "./HeadshotImage";
 export default function HeroSection() {
   return (
     <section className="bg-pink-light">
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 py-24 text-center">
+      <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 py-12 text-center md:py-24">
         <HeadshotImage size="lg" />
 
         <h1 className="text-4xl font-bold text-heading md:text-5xl">
@@ -24,10 +24,9 @@ export default function HeroSection() {
           that deliver real business outcomes.
         </p>
 
-        <p className="text-md font-medium text-heading">
-          Currently leading Product, Design, and Support at{" "}
-          <span className="text-pink-dark">Transfix</span>, a NYC-based
-          freight-tech startup.
+        <p className="text-md italic text-gray">
+          Currently leading Product, Design, and Support at Transfix, a
+          NYC-based freight-tech startup.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
