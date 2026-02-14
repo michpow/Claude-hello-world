@@ -53,9 +53,6 @@ export default function ExperiencePage() {
           </p>
           <div className="mt-3 flex flex-wrap gap-1.5">
             <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">
-              AI Community
-            </span>
-            <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">
               Pittsburgh
             </span>
             <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">

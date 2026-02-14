@@ -23,7 +23,7 @@ export const experiences: CompanyExperience[] = [
         period: "Mar 2024 – Present",
         description:
           "Leading Product Management, Product Design, and Product Support across a 0→1 SaaS product suite. Driving AI/ML predictive freight pricing models and innovative workflow products for freight broker and 3PL customers.",
-        tags: ["AI/ML", "0→1 SaaS", "Team Leadership", "Pricing Models"],
+        tags: ["AI/ML", "0→1 SaaS", "Team Leadership"],
       },
       {
         title: "Group Product Manager",
@@ -58,7 +58,7 @@ export const experiences: CompanyExperience[] = [
         period: "Aug 2018 – Oct 2021",
         description:
           "Developed insurance analytics products on a scalable data and reporting platform, leveraging AI/ML and actuarial science. Delivered insurtech solutions for high-profile ecommerce, logistics, and payments companies globally.",
-        tags: ["Insurtech", "Analytics", "AI/ML", "Global Delivery"],
+        tags: ["Insurtech", "AI/ML", "Global Delivery"],
       },
     ],
   },
