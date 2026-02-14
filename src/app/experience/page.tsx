@@ -30,7 +30,7 @@ export default function ExperiencePage() {
           <div className="flex items-start justify-between">
             <div>
               <h3 className="text-xl font-bold text-heading">AI@Work PGH</h3>
-              <p className="text-sm text-gray">Jan 2025 – Present</p>
+              <p className="text-sm text-gray">Jan 2026 – Present</p>
             </div>
             <a
               href="https://www.aiatworkpgh.com"
