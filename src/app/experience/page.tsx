@@ -71,29 +71,30 @@ export default function ExperiencePage() {
         <div className="space-y-6">
           <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
             <h3 className="text-xl font-bold text-heading">
-              Master of Business Administration (MBA)
+              Master of Business Administration
             </h3>
             <p className="mt-1 text-sm text-gray">
               University of Pittsburgh School of Business
             </p>
-            <p className="mt-1 text-xs text-gray">
-              Dean&apos;s List, Completed part-time while working full-time
+            <p className="mt-1 text-xs italic text-gray">
+              Dean&apos;s List · Completed while working full-time
             </p>
           </div>
           <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
             <h3 className="text-xl font-bold text-heading">Bachelor of Arts</h3>
             <p className="mt-1 text-sm text-gray">University of Pittsburgh</p>
-            <p className="mt-1 text-xs text-gray">
+            <p className="mt-1 text-xs italic text-gray">
               English Literature, Minor in Theatre Arts
             </p>
           </div>
           <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
             <h3 className="text-lg font-bold text-heading">Certifications</h3>
-            <p className="mt-2 text-sm leading-relaxed text-gray">
-              Project Management Certificate · Global Supply Chain Management
-              Certificate · Certified Scrum Product Owner (CSPO) · Six Sigma
-              Green Belt
-            </p>
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-gray">
+              <li>Project Management Certificate</li>
+              <li>Global Supply Chain Management Certificate</li>
+              <li>Certified Scrum Product Owner (CSPO)</li>
+              <li>Six Sigma Green Belt</li>
+            </ul>
           </div>
         </div>
       </section>
