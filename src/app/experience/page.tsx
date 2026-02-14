@@ -90,8 +90,8 @@ export default function ExperiencePage() {
           <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
             <h3 className="text-lg font-bold text-heading">Certifications</h3>
             <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-gray">
-              <li>Project Management Certificate</li>
-              <li>Global Supply Chain Management Certificate</li>
+              <li>Project Management</li>
+              <li>Global Supply Chain Management</li>
               <li>Certified Scrum Product Owner (CSPO)</li>
               <li>Six Sigma Green Belt</li>
             </ul>
