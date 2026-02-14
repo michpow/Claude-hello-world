@@ -79,11 +79,11 @@ export const experiences: CompanyExperience[] = [
   {
     company: "Giant Eagle",
     companyUrl: "https://www.gianteagle.com",
-    overallPeriod: "Jan 2014 – Jun 2016",
+    overallPeriod: "Oct 2015 – Jun 2016",
     roles: [
       {
         title: "Strategic Sourcing Analyst",
-        period: "Jan 2014 – Jun 2016",
+        period: "Oct 2015 – Jun 2016",
         description:
           "Managed strategic sourcing and procurement initiatives across categories. Conducted spend analysis, vendor negotiations, and cost-reduction strategies to optimize supply chain performance.",
         tags: ["Procurement", "Supply Chain", "Cost Optimization"],
@@ -93,11 +93,11 @@ export const experiences: CompanyExperience[] = [
   {
     company: "University of Pittsburgh School of Dental Medicine",
     companyUrl: "https://www.dental.pitt.edu",
-    overallPeriod: "Aug 2012 – Dec 2013",
+    overallPeriod: "Nov 2012 – Oct 2015",
     roles: [
       {
         title: "Department Administrator",
-        period: "Aug 2012 – Dec 2013",
+        period: "Nov 2012 – Oct 2015",
         description:
           "Managed day-to-day department operations including budgets, scheduling, and administrative processes. Supported faculty and staff coordination across the school.",
         tags: ["Operations", "Administration", "Budget Management"],
