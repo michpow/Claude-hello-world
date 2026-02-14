@@ -24,24 +24,16 @@ export default function HeroSection() {
           that deliver real business outcomes.
         </p>
 
-        {/* CTA = "Call to Action" — buttons that guide visitors to the
-            most important pages on your site */}
+        <p className="text-md font-medium text-heading">
+          Currently leading Product, Design, and Support at{" "}
+          <span className="text-pink-dark">Transfix</span>, a NYC-based
+          freight-tech startup.
+        </p>
+
         <div className="flex flex-wrap justify-center gap-4">
           <Link
-            href="/experience"
-            className="rounded-full bg-pink-dark px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-pink-medium"
-          >
-            View Experience
-          </Link>
-          <Link
-            href="/about"
-            className="rounded-full border border-pink-dark px-6 py-3 text-sm font-medium text-pink-dark transition-colors hover:bg-pink-dark hover:text-white"
-          >
-            About Me
-          </Link>
-          <Link
             href="/contact"
-            className="rounded-full border border-gray px-6 py-3 text-sm font-medium text-gray transition-colors hover:border-heading hover:text-heading"
+            className="rounded-full bg-pink-dark px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-pink-medium"
           >
             Contact Me
           </Link>
