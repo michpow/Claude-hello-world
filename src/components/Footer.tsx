@@ -4,7 +4,11 @@ import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 export default function Footer() {
   return (
     <footer className="border-t border-gray-light bg-pink-light">
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-6 py-8 text-center md:flex-row md:justify-between md:text-left">
+      <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 py-8 text-center md:flex-row md:justify-between md:text-left">
+        <p className="text-sm text-gray">
+          Michelle Powell
+        </p>
+
         {/* Page links */}
         <div className="flex gap-6">
           <Link href="/about" className="text-sm text-gray transition-colors hover:text-pink-dark">
@@ -30,10 +34,6 @@ export default function Footer() {
             <FiMail className="h-5 w-5" />
           </a>
         </div>
-
-        <p className="text-xs text-gray">
-          &copy; {new Date().getFullYear()} Michelle Powell
-        </p>
       </div>
     </footer>
   );
