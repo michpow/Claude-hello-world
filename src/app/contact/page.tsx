@@ -33,7 +33,7 @@ export default function ContactPage() {
       <h1 className="mb-4 text-3xl font-bold text-heading">Let&apos;s Connect</h1>
       <p className="mb-10 text-gray">
         If you&apos;re building products, navigating complexity, or thinking
-        about how AI actually fits into real teams — I&apos;m always happy to
+        about how AI actually fits into real teams – I&apos;m always happy to
         connect.
       </p>
 
