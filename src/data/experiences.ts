@@ -44,7 +44,7 @@ export const experiences: CompanyExperience[] = [
         period: "Nov 2021 – Oct 2022",
         description:
           "Drove growth for Shipper TMS and Carrier Apps. Developed strategy supporting a successful funding round, onboarded the first enterprise SaaS customer, and increased usage volume by over 6,000%.",
-        tags: ["SaaS Growth", "Enterprise", "Strategy", "6,000% Growth"],
+        tags: ["SaaS Growth", "Enterprise", "Strategy"],
       },
     ],
   },
@@ -73,6 +73,34 @@ export const experiences: CompanyExperience[] = [
         description:
           "Advised Fortune 500 clients on digital transformation and automation. Led post-acquisition integration across 12 cross-functional teams. Spearheaded an NLP/OCR project reducing underwriting cycle time by 60+ days.",
         tags: ["Consulting", "Digital Transformation", "NLP/OCR", "Fortune 500"],
+      },
+    ],
+  },
+  {
+    company: "Giant Eagle",
+    companyUrl: "https://www.gianteagle.com",
+    overallPeriod: "Jan 2014 – Jun 2016",
+    roles: [
+      {
+        title: "Strategic Sourcing Analyst",
+        period: "Jan 2014 – Jun 2016",
+        description:
+          "Managed strategic sourcing and procurement initiatives across categories. Conducted spend analysis, vendor negotiations, and cost-reduction strategies to optimize supply chain performance.",
+        tags: ["Procurement", "Supply Chain", "Cost Optimization"],
+      },
+    ],
+  },
+  {
+    company: "University of Pittsburgh School of Dental Medicine",
+    companyUrl: "https://www.dental.pitt.edu",
+    overallPeriod: "Aug 2012 – Dec 2013",
+    roles: [
+      {
+        title: "Department Administrator",
+        period: "Aug 2012 – Dec 2013",
+        description:
+          "Managed day-to-day department operations including budgets, scheduling, and administrative processes. Supported faculty and staff coordination across the school.",
+        tags: ["Operations", "Administration", "Budget Management"],
       },
     ],
   },

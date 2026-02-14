@@ -18,7 +18,7 @@ export default function AboutPage() {
       <h1 className="mb-8 text-3xl font-bold text-heading">About Me</h1>
 
       {/* Bio section — headshot next to a text introduction */}
-      <div className="mb-12 flex flex-col items-center gap-8 md:flex-row md:items-start">
+      <div className="mb-12 flex flex-col items-center gap-4 md:flex-row md:items-start md:gap-8">
         <div className="shrink-0">
           <HeadshotImage size="sm" />
         </div>
