@@ -8,14 +8,14 @@ import "./globals.css";
 // "Open Graph" (og) tags are specifically for social media cards.
 export const metadata: Metadata = {
   title: {
-    default: "Michelle Powell | Director of Product",
+    default: "Michelle Powell | director of product",
     template: "%s | Michelle Powell",
   },
   description:
-    "Director of Product leader specializing in AI/ML product strategy, 0→1 SaaS platforms, and cross-functional team leadership.",
+    "director of product leader specializing in AI/ML product strategy, 0→1 SaaS platforms, and cross-functional team leadership.",
   keywords: [
     "Michelle Powell",
-    "Director of Product",
+    "director of product",
     "product management",
     "AI/ML product strategy",
     "SaaS",
@@ -24,18 +24,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Michelle Powell" }],
   openGraph: {
-    title: "Michelle Powell | Director of Product",
+    title: "Michelle Powell | director of product",
     description:
-      "Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and scaling empowered product teams.",
+      "director of product specializing in AI/ML product strategy, 0→1 SaaS platforms, and scaling empowered product teams.",
     type: "website",
     locale: "en_US",
     siteName: "Michelle Powell",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Michelle Powell | Director of Product",
+    title: "Michelle Powell | director of product",
     description:
-      "Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and scaling empowered product teams.",
+      "director of product specializing in AI/ML product strategy, 0→1 SaaS platforms, and scaling empowered product teams.",
   },
   robots: {
     index: true,

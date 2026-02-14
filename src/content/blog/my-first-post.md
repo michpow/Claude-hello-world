@@ -1,10 +1,10 @@
 ---
-title: "My First Blog Post"
+title: "my first blog post"
 date: "2026-02-12"
 excerpt: "Welcome to my blog! I'm starting my journey into web development and documenting everything I learn along the way."
 ---
 
-# Hello World!
+# hello world!
 
 Welcome to my very first blog post. I'm Michelle, and I'm learning to code!
 

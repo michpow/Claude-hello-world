@@ -1,10 +1,10 @@
 ---
-title: "Why I'm Learning to Code"
+title: "why I'm learning to code"
 date: "2026-02-11"
 excerpt: "A look at what motivated me to start learning software development, and what I hope to build."
 ---
 
-# Why I'm Learning to Code
+# why I'm learning to code
 
 There's something magical about being able to build things with code. You start with a blank screen and end up with something real — something people can use.
 

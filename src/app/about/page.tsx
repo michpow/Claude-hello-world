@@ -8,27 +8,27 @@ import HeadshotImage from "@/components/HeadshotImage";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn more about Michelle Powell — Director of Product specializing in AI/ML product strategy, 0→1 SaaS platforms, and cross-functional leadership.",
+    "Learn more about Michelle Powell — director of product specializing in AI/ML product strategy, 0→1 SaaS platforms, and cross-functional leadership.",
 };
 
 const skills = [
-  "Product Management",
-  "AI/ML Product Strategy",
-  "0→1 SaaS Platforms",
-  "B2B Marketplace",
-  "Cross-Functional Leadership",
-  "Data & Analytics",
-  "User Experience (UX)",
-  "Agile / Scrum",
-  "Enterprise SaaS",
-  "Global Product Delivery",
+  "product management",
+  "AI/ML product strategy",
+  "0→1 SaaS platforms",
+  "B2B marketplace",
+  "cross-functional leadership",
+  "data & analytics",
+  "user experience (UX)",
+  "agile / scrum",
+  "enterprise SaaS",
+  "global product delivery",
 ];
 
 
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="mb-8 text-3xl font-bold text-heading">About Me</h1>
+      <h1 className="mb-8 text-3xl font-bold text-heading">about me</h1>
 
       {/* Bio section — headshot next to a text introduction */}
       <div className="mb-12 flex flex-col items-center gap-8 md:flex-row md:items-start">
@@ -55,7 +55,7 @@ export default function AboutPage() {
 
       {/* Skills — displayed as colorful "badge" pills */}
       <section className="mb-12">
-        <h2 className="mb-4 text-xl font-bold text-heading">Skills</h2>
+        <h2 className="mb-4 text-xl font-bold text-heading">skills</h2>
         <div className="flex flex-wrap gap-3">
           {skills.map((skill) => (
             <span

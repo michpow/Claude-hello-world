@@ -25,7 +25,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
       </h2>
       <p className="text-sm leading-relaxed text-gray">{post.excerpt}</p>
       <span className="mt-3 inline-block text-sm font-medium text-pink-dark">
-        Read more &rarr;
+        read more &rarr;
       </span>
     </Link>
   );

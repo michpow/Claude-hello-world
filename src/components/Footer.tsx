@@ -12,13 +12,13 @@ export default function Footer() {
         {/* Page links */}
         <div className="flex gap-6">
           <Link href="/about" className="text-sm text-gray transition-colors hover:text-pink-dark">
-            About
+            about
           </Link>
           <Link href="/blog" className="text-sm text-gray transition-colors hover:text-pink-dark">
-            Blog
+            blog
           </Link>
           <Link href="/contact" className="text-sm text-gray transition-colors hover:text-pink-dark">
-            Contact
+            contact
           </Link>
         </div>
 

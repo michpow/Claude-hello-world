@@ -5,13 +5,13 @@ import { FiExternalLink } from "react-icons/fi";
 
 export const metadata: Metadata = {
   title: "Experience",
-  description: "Michelle Powell's career experience — from management consulting to Director of Product at Transfix.",
+  description: "Michelle Powell's career experience — from management consulting to director of product at Transfix.",
 };
 
 export default function ExperiencePage() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="mb-4 text-3xl font-bold text-heading">Experience</h1>
+      <h1 className="mb-4 text-3xl font-bold text-heading">experience</h1>
       <p className="mb-10 text-gray">
         From consulting at Accenture to building AI-powered SaaS products at
         Transfix — here&apos;s my career journey.
@@ -25,7 +25,7 @@ export default function ExperiencePage() {
 
       {/* Volunteering */}
       <section className="mt-16">
-        <h2 className="mb-8 text-2xl font-bold text-heading">Volunteering</h2>
+        <h2 className="mb-8 text-2xl font-bold text-heading">volunteering</h2>
         <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
           <div className="flex items-start justify-between">
             <div>
@@ -41,19 +41,19 @@ export default function ExperiencePage() {
               <FiExternalLink className="h-4 w-4" />
             </a>
           </div>
-          <p className="mt-2 text-xs font-medium text-pink-dark">Board Member</p>
+          <p className="mt-2 text-xs font-medium text-pink-dark">board member</p>
           <p className="mt-2 text-sm leading-relaxed text-gray">
             Community creator for Pittsburgh&apos;s AI builder community — connecting local professionals, developers, and enthusiasts to explore and build with AI.
           </p>
           <div className="mt-3 flex flex-wrap gap-1.5">
             <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">
-              AI Community
+              AI community
             </span>
             <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">
               Pittsburgh
             </span>
             <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">
-              Community Building
+              community building
             </span>
           </div>
         </div>

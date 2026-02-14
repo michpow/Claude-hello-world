@@ -20,7 +20,7 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  if (!post) return { title: "Post Not Found" };
+  if (!post) return { title: "post not found" };
 
   return {
     title: post.title,
@@ -47,7 +47,7 @@ export default async function BlogPostPage({
         href="/blog"
         className="mb-8 inline-block text-sm text-pink-dark hover:underline"
       >
-        &larr; Back to blog
+        &larr; back to blog
       </Link>
 
       <article>

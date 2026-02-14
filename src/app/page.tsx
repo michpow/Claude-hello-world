@@ -15,7 +15,7 @@ export default function Home() {
       <section className="bg-pink-light/50">
         <div className="mx-auto max-w-5xl px-6 py-16">
           <h2 className="mb-8 text-2xl font-bold text-heading">
-            Latest Blog Posts
+            latest blog posts
           </h2>
           <div className="grid gap-6 md:grid-cols-2">
             {latestPosts.map((post) => (
@@ -27,7 +27,7 @@ export default function Home() {
               href="/blog"
               className="text-sm font-medium text-pink-dark hover:underline"
             >
-              Read all posts &rarr;
+              read all posts &rarr;
             </Link>
           </div>
         </div>

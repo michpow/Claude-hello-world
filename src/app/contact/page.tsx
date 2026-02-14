@@ -3,12 +3,12 @@ import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Michelle — links to GitHub, LinkedIn, and email.",
+  description: "get in touch with Michelle — links to GitHub, LinkedIn, and email.",
 };
 
 const contactLinks = [
   {
-    label: "Email",
+    label: "email",
     value: "michellerajpowell@gmail.com",
     href: "mailto:michellerajpowell@gmail.com",
     icon: FiMail,
@@ -30,7 +30,7 @@ const contactLinks = [
 export default function ContactPage() {
   return (
     <div className="mx-auto max-w-xl px-6 py-16 text-center">
-      <h1 className="mb-4 text-3xl font-bold text-heading">Get in Touch</h1>
+      <h1 className="mb-4 text-3xl font-bold text-heading">get in touch</h1>
       <p className="mb-10 text-gray">
         Whether you&apos;re a recruiter, a fellow product leader, or just want
         to connect — I&apos;d love to hear from you.

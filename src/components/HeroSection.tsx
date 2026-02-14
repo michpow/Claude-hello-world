@@ -15,7 +15,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg font-medium text-heading">
-          Director of Product | AI &amp; Data-Driven Innovation
+          director of product | AI &amp; data-driven innovation
         </p>
 
         <p className="max-w-xl text-lg leading-relaxed text-gray">
@@ -31,19 +31,19 @@ export default function HeroSection() {
             href="/experience"
             className="rounded-full bg-pink-dark px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-pink-medium"
           >
-            View Experience
+            view experience
           </Link>
           <Link
             href="/about"
             className="rounded-full border border-pink-dark px-6 py-3 text-sm font-medium text-pink-dark transition-colors hover:bg-pink-dark hover:text-white"
           >
-            About Me
+            about me
           </Link>
           <Link
             href="/contact"
             className="rounded-full border border-gray px-6 py-3 text-sm font-medium text-gray transition-colors hover:border-heading hover:text-heading"
           >
-            Contact Me
+            contact me
           </Link>
         </div>
       </div>
