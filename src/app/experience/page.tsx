@@ -49,7 +49,7 @@ export default function ExperiencePage() {
           </div>
           <p className="mt-2 text-xs font-medium text-pink-dark">Board Member</p>
           <p className="mt-2 text-sm leading-relaxed text-gray">
-            Community creator for Pittsburgh&apos;s AI builder community — connecting local professionals, developers, and enthusiasts to explore and build with AI.
+            Community creator for Pittsburgh&apos;s AI builder community, connecting local professionals, developers, and enthusiasts to explore and build with AI.
           </p>
           <div className="mt-3 flex flex-wrap gap-1.5">
             <span className="rounded-full bg-pink-light px-2.5 py-0.5 text-xs font-medium text-pink-dark">
@@ -87,14 +87,14 @@ export default function ExperiencePage() {
               English Literature, Minor in Theatre Arts
             </p>
           </div>
-        </div>
-        <div className="mt-6 rounded-xl border border-gray-light bg-white p-6 shadow-sm">
-          <h3 className="text-lg font-bold text-heading">Certifications</h3>
-          <p className="mt-2 text-sm leading-relaxed text-gray">
-            Project Management Certificate · Global Supply Chain Management
-            Certificate · Certified Scrum Product Owner / CSPO · Six Sigma
-            Green Belt
-          </p>
+          <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-heading">Certifications</h3>
+            <p className="mt-2 text-sm leading-relaxed text-gray">
+              Project Management Certificate · Global Supply Chain Management
+              Certificate · Certified Scrum Product Owner (CSPO) · Six Sigma
+              Green Belt
+            </p>
+          </div>
         </div>
       </section>
     </div>
