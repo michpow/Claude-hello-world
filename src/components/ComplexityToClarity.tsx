@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 interface Label {
   text: string;
@@ -36,9 +36,68 @@ const pathD = [
 export default function ComplexityToClarity() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const pathRef = useRef<SVGPathElement>(null);
+  const animationRef = useRef<number>(0);
   const [isVisible, setIsVisible] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [hasPlayed, setHasPlayed] = useState(false);
 
+  const playAnimation = useCallback(() => {
+    const path = pathRef.current;
+    if (!path) return;
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    const pathLength = path.getTotalLength();
+
+    // Cancel any in-progress animation
+    if (animationRef.current) {
+      cancelAnimationFrame(animationRef.current);
+    }
+
+    if (prefersReducedMotion) {
+      path.style.strokeDasharray = "none";
+      path.style.transition = "none";
+      requestAnimationFrame(() => {
+        setProgress(1);
+        setHasPlayed(true);
+      });
+      return;
+    }
+
+    // Reset the path visually
+    path.style.transition = "none";
+    path.style.strokeDasharray = `${pathLength}`;
+    path.style.strokeDashoffset = `${pathLength}`;
+
+    // Batch state reset and start animation via rAF
+    requestAnimationFrame(() => {
+      setProgress(0);
+      setHasPlayed(false);
+
+      requestAnimationFrame(() => {
+        path.style.transition = "stroke-dashoffset 2.5s ease-out";
+        path.style.strokeDashoffset = "0";
+
+        const duration = 2500;
+        const start = performance.now();
+        const animate = (now: number) => {
+          const elapsed = now - start;
+          const p = Math.min(elapsed / duration, 1);
+          setProgress(p);
+          if (p < 1) {
+            animationRef.current = requestAnimationFrame(animate);
+          } else {
+            setHasPlayed(true);
+          }
+        };
+        animationRef.current = requestAnimationFrame(animate);
+      });
+    });
+  }, []);
+
+  // Trigger on scroll into view
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -57,40 +116,21 @@ export default function ComplexityToClarity() {
     return () => observer.disconnect();
   }, []);
 
+  // Auto-play on first visibility
   useEffect(() => {
-    if (!isVisible || !pathRef.current) return;
-
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    const path = pathRef.current;
-    const pathLength = path.getTotalLength();
-
-    if (prefersReducedMotion) {
-      path.style.strokeDasharray = "none";
-      requestAnimationFrame(() => setProgress(1));
-      return;
+    if (isVisible) {
+      playAnimation();
     }
+  }, [isVisible, playAnimation]);
 
-    path.style.strokeDasharray = `${pathLength}`;
-    path.style.strokeDashoffset = `${pathLength}`;
-
-    requestAnimationFrame(() => {
-      path.style.transition = "stroke-dashoffset 2.5s ease-out";
-      path.style.strokeDashoffset = "0";
-    });
-
-    const duration = 2500;
-    const start = performance.now();
-    const animate = (now: number) => {
-      const elapsed = now - start;
-      const p = Math.min(elapsed / duration, 1);
-      setProgress(p);
-      if (p < 1) requestAnimationFrame(animate);
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
     };
-    requestAnimationFrame(animate);
-  }, [isVisible]);
+  }, []);
 
   return (
     <section ref={sectionRef} className="overflow-hidden py-12 md:py-16">
@@ -100,10 +140,11 @@ export default function ComplexityToClarity() {
         </p>
         <svg
           viewBox="0 0 1200 210"
-          className="w-full"
+          className="w-full cursor-pointer"
           preserveAspectRatio="xMidYMid meet"
           role="img"
-          aria-label="Animated line that starts squiggly and chaotic on the left and smooths into a straight line on the right, representing the journey from messy ideas to shipped product."
+          aria-label="Animated line from squiggly to straight, representing the journey from messy ideas to shipped product. Click to replay."
+          onClick={playAnimation}
         >
           <path
             ref={pathRef}
@@ -134,6 +175,12 @@ export default function ComplexityToClarity() {
             );
           })}
         </svg>
+        <p
+          className="mt-2 text-center text-xs text-gray/60 transition-opacity duration-500"
+          style={{ opacity: hasPlayed ? 1 : 0 }}
+        >
+          Click to replay
+        </p>
       </div>
     </section>
   );
