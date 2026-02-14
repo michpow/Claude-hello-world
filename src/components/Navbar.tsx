@@ -31,35 +31,9 @@ export default function Navbar() {
           Michelle<span className="text-pink-primary">.</span>
         </Link>
 
-        {/* Desktop links */}
-        <div className="hidden gap-8 md:flex">
-          {navLinks.map((link) => {
-            const isActive =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(link.href);
-
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`relative text-sm font-medium transition-colors hover:text-pink-dark ${
-                  isActive ? "text-pink-dark" : "text-gray"
-                }`}
-              >
-                {link.label}
-                {/* Active indicator — a little pink line under the current page */}
-                {isActive && (
-                  <span className="absolute -bottom-4 left-0 right-0 h-0.5 bg-pink-dark" />
-                )}
-              </Link>
-            );
-          })}
-        </div>
-
-        {/* Mobile hamburger button */}
+        {/* Hamburger button */}
         <button
-          className="flex flex-col gap-1.5 p-1 md:hidden"
+          className="flex flex-col gap-1.5 p-1"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
           aria-expanded={mobileMenuOpen}
@@ -82,9 +56,9 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu — slides open when hamburger is tapped */}
+      {/* Menu — slides open when hamburger is tapped */}
       <div
-        className={`overflow-hidden border-t border-gray-light bg-white transition-all duration-200 md:hidden ${
+        className={`overflow-hidden border-t border-gray-light bg-white transition-all duration-200 ${
           mobileMenuOpen ? "max-h-64 py-4" : "max-h-0 border-t-0 py-0"
         }`}
       >
