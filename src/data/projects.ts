@@ -15,7 +15,7 @@ export const projects: Project[] = [
   {
     title: "Portfolio Website",
     description:
-      "This very site! A personal portfolio and blog built from scratch with Next.js, TypeScript, and Tailwind CSS. Features a markdown-powered blog system.",
+      "This very site! A personal portfolio built from scratch with Next.js, TypeScript, and Tailwind CSS. Features a markdown-powered field notes system.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Markdown"],
     github: "https://github.com/michpow/Claude-hello-world",
   },
