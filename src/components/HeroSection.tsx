@@ -34,7 +34,7 @@ export default function HeroSection() {
             href="/contact"
             className="rounded-full bg-pink-dark px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-pink-medium"
           >
-            Contact Me
+            Let's Connect
           </Link>
         </div>
       </div>
