@@ -56,6 +56,24 @@ const milestones = [
     description:
       "Developed data-driven sourcing strategies to optimize vendor selection and reduce costs across IT categories for 400+ retail locations.",
   },
+  {
+    date: "2013 – 2016",
+    title: "MBA — University of Pittsburgh (Part-Time)",
+    description:
+      "Earned an MBA while working full-time, building expertise in strategy, finance, and operations management.",
+  },
+  {
+    date: "2012 – 2015",
+    title: "Department Administrator — University of Pittsburgh",
+    description:
+      "Managed operations for academic departments in higher education and dental medicine, gaining deep domain experience in both sectors.",
+  },
+  {
+    date: "2008 – 2012",
+    title: "B.A., English Literature — University of Pittsburgh",
+    description:
+      "Studied English Literature with a focus on cultural criticism and humor theory. Selected to present at a competitive literature conference for a paper on working-class humor in England — from Shakespeare's A Midsummer Night's Dream to Ricky Gervais's The Office. Also worked as a Writing Center tutor, coaching peers on academic writing and critical analysis.",
+  },
 ];
 
 export default function AboutPage() {
@@ -101,9 +119,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline — career milestones */}
+      {/* Timeline — career & education milestones */}
       <section className="mb-12">
-        <h2 className="mb-6 text-xl font-bold text-heading">Career</h2>
+        <h2 className="mb-6 text-xl font-bold text-heading">Career &amp; Education</h2>
         <div className="space-y-6 border-l-2 border-pink-primary/30 pl-6">
           {milestones.map((milestone) => (
             <div key={milestone.title} className="relative">

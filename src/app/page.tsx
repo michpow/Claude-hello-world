@@ -6,8 +6,8 @@ import { experiences } from "@/data/experiences";
 import { getAllPosts } from "@/lib/blog";
 
 export default function Home() {
-  // Show the first 3 experience entries and first 2 blog posts on the home page
-  const featuredExperience = experiences.slice(0, 3);
+  // Show the first 2 companies and first 2 blog posts on the home page
+  const featuredExperience = experiences.slice(0, 2);
   const latestPosts = getAllPosts().slice(0, 2);
 
   return (
@@ -20,9 +20,9 @@ export default function Home() {
         <h2 className="mb-8 text-2xl font-bold text-heading">
           Experience Highlights
         </h2>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="space-y-8">
           {featuredExperience.map((experience) => (
-            <ExperienceCard key={experience.title} experience={experience} />
+            <ExperienceCard key={experience.company} experience={experience} />
           ))}
         </div>
         <div className="mt-8 text-center">
