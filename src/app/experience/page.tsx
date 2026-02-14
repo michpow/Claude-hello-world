@@ -91,9 +91,9 @@ export default function ExperiencePage() {
         <div className="mt-6 rounded-xl border border-gray-light bg-white p-6 shadow-sm">
           <h3 className="text-lg font-bold text-heading">Certifications</h3>
           <p className="mt-2 text-sm leading-relaxed text-gray">
-            Project Management Certificate (Pitt Katz) · Global Supply Chain
-            Management Certificate (Pitt Katz) · Certified Scrum Product Owner /
-            CSPO (Scrum Alliance) · Six Sigma Green Belt (ASQ)
+            Project Management Certificate · Global Supply Chain Management
+            Certificate · Certified Scrum Product Owner / CSPO · Six Sigma
+            Green Belt
           </p>
         </div>
       </section>
