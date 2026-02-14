@@ -15,7 +15,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg font-medium text-heading">
-          Director of Product | AI Community Builder
+          Director of Product | Community Builder
         </p>
 
         <p className="max-w-xl text-lg leading-relaxed text-gray">
