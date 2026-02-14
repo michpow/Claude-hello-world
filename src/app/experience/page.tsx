@@ -13,15 +13,21 @@ export default function ExperiencePage() {
     <div className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="mb-4 text-3xl font-bold text-heading">Experience</h1>
       <p className="mb-10 text-gray">
-        From consulting at Accenture to building AI-powered SaaS products at
-        Transfix — here&apos;s my career journey.
+        My path into product wasn&apos;t linear. I started working inside
+        complex systems, then gradually moved closer to product and leadership.
+        Along the way, I learned how much clarity, context, and judgment matter
+        when things get messy.
       </p>
 
-      <div className="space-y-8">
-        {experiences.map((experience) => (
-          <ExperienceCard key={experience.company} experience={experience} />
-        ))}
-      </div>
+      {/* Work */}
+      <section>
+        <h2 className="mb-8 text-2xl font-bold text-heading">Work</h2>
+        <div className="space-y-8">
+          {experiences.map((experience) => (
+            <ExperienceCard key={experience.company} experience={experience} />
+          ))}
+        </div>
+      </section>
 
       {/* Volunteering */}
       <section className="mt-16">
@@ -56,6 +62,39 @@ export default function ExperiencePage() {
               Community Building
             </span>
           </div>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section className="mt-16">
+        <h2 className="mb-8 text-2xl font-bold text-heading">Education</h2>
+        <div className="space-y-6">
+          <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
+            <h3 className="text-xl font-bold text-heading">
+              Master of Business Administration (MBA)
+            </h3>
+            <p className="mt-1 text-sm text-gray">
+              University of Pittsburgh School of Business
+            </p>
+            <p className="mt-1 text-xs text-gray">
+              Dean&apos;s List, Completed part-time while working full-time
+            </p>
+          </div>
+          <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
+            <h3 className="text-xl font-bold text-heading">Bachelor of Arts</h3>
+            <p className="mt-1 text-sm text-gray">University of Pittsburgh</p>
+            <p className="mt-1 text-xs text-gray">
+              English Literature, Minor in Theatre Arts
+            </p>
+          </div>
+        </div>
+        <div className="mt-6 rounded-xl border border-gray-light bg-white p-6 shadow-sm">
+          <h3 className="text-lg font-bold text-heading">Certifications</h3>
+          <p className="mt-2 text-sm leading-relaxed text-gray">
+            Project Management Certificate (Pitt Katz) · Global Supply Chain
+            Management Certificate (Pitt Katz) · Certified Scrum Product Owner /
+            CSPO (Scrum Alliance) · Six Sigma Green Belt (ASQ)
+          </p>
         </div>
       </section>
     </div>
