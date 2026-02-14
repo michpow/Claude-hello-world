@@ -41,8 +41,7 @@ export default function AboutPage() {
             complex environments. I eventually returned to Pittsburgh, where I
             lead product teams remotely and stay closely connected to the local
             tech and AI community. Outside of work, you can catch me at a
-            pottery studio, walking around the city, meeting up with tech folks,
-            or hanging with my family.
+            pottery studio, walking around the city, or hanging with my family.
           </p>
         </div>
       </div>
