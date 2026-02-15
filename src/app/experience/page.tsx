@@ -81,7 +81,7 @@ export default function ExperiencePage() {
             <h3 className="text-xl font-bold text-heading">Bachelor of Arts</h3>
             <p className="mt-1 text-sm text-gray">University of Pittsburgh</p>
             <p className="mt-1 text-xs italic text-gray">
-              English Literature, Minor in Theatre Arts
+              English Literature · Minor in Theatre Arts
             </p>
           </div>
           <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
