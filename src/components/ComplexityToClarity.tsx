@@ -156,7 +156,7 @@ export default function ComplexityToClarity() {
                 key={label.text}
                 x={label.x}
                 y={label.y}
-                fill={label.highlight ? "#EC4899" : "#6B7280"}
+                fill={label.highlight ? "var(--color-pink-dark)" : "var(--color-gray)"}
                 fontSize="17"
                 fontFamily="Inter, sans-serif"
                 fontWeight={label.highlight ? "600" : "500"}

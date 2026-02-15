@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="group rounded-xl border border-gray-light bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
+    <div className="group rounded-xl border border-gray-light bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:bg-dark-surface">
       {/* Image placeholder — replace with real screenshots later */}
       <div className="mb-4 h-36 rounded-lg bg-gray-light transition-colors group-hover:bg-pink-light" />
 

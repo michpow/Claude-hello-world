@@ -11,7 +11,7 @@ export default function FieldNoteCard({ note }: FieldNoteCardProps) {
   return (
     <Link
       href={`/field-notes/${note.slug}`}
-      className="group rounded-xl border border-gray-light bg-white p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+      className="group rounded-xl border border-gray-light bg-white p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md dark:bg-dark-surface"
     >
       <p className="mb-1 text-xs text-gray">
         {new Date(note.date).toLocaleDateString("en-US", {

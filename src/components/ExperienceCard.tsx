@@ -7,7 +7,7 @@ interface ExperienceCardProps {
 
 export default function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
-    <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm">
+    <div className="rounded-xl border border-gray-light bg-white p-6 shadow-sm dark:bg-dark-surface">
       {/* Company header */}
       <div className="mb-6 flex items-start justify-between">
         <div>
@@ -32,7 +32,7 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
           <div key={role.title + role.period} className="relative flex gap-4">
             {/* Timeline line and dot */}
             <div className="flex flex-col items-center">
-              <div className="mt-1.5 h-3 w-3 shrink-0 rounded-full border-2 border-pink-dark bg-white" />
+              <div className="mt-1.5 h-3 w-3 shrink-0 rounded-full border-2 border-pink-dark bg-white dark:bg-dark-surface" />
               {index < experience.roles.length - 1 && (
                 <div className="w-0.5 grow bg-pink-primary/40" />
               )}

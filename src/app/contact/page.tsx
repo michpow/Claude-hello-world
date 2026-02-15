@@ -44,7 +44,7 @@ export default function ContactPage() {
             href={link.href}
             target={link.href.startsWith("mailto") ? undefined : "_blank"}
             rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
-            className="flex items-center gap-4 rounded-xl border border-gray-light bg-white px-6 py-4 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+            className="flex items-center gap-4 rounded-xl border border-gray-light bg-white px-6 py-4 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md dark:bg-dark-surface"
           >
             <link.icon className="h-6 w-6 text-pink-dark" />
             <div className="text-left">
